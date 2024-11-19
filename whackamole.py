@@ -21,7 +21,6 @@ def main():
                     running = False
                 if event.type == pygame.MOUSEBUTTONDOWN:
 
-                    print(f"Mouse clicked at {event.pos}")
                     mouse_x , mouse_y = event.pos
                     mouse_x = (mouse_x // 32) * 32
                     mouse_y = (mouse_y // 32) * 32
@@ -29,7 +28,7 @@ def main():
                     x, y = position
 
                     if mouse_x == x and mouse_y == y:
-                        print("hi")
+
                         x = (random.randrange(0, 640) // 32) * 32
                         y = (random.randrange(0, 512) // 32) * 32
 
